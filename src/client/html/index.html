@@ -13,14 +13,34 @@
     <main>
         <section class="userInput">
             <div class="form">
-                <form class="trip-form" onsubmit="return Client.handleSubmit(event)">
-                    <input class="search-input" type="search" id="city" placeholder="What's your destination?" required>
+                <form class="trip-form">
+                    <input class="search-input" type="search" id="city" placeholder="Where are you up to?" required>
                     <label>Departure
                         <input class="date-input" type="date" id="departure" name="trip-start" min="2020-07-01" max="2022-12-31" value="2020-07-14">
                     </label>
-                    <input class="submit-input" type="submit" value="Search" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <input data-modal-target="#modal" class="submit-input" type="submit">
                 </form>
             </div>
+
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Draft</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-img">
+                        <img src="../src/media/italy.jpg">
+                    </div>
+                    <div class="modal-data">
+                        <div>Trip to <class id="city">Florence</class>, <span class="country">Italy</span></div>
+                        <div>Departure: <span class="date">07/09/2020</span></div>
+                        <div>Weather: <span id="weather">Sunny</span></div>
+                        <div>Temperature: <span id="highest-temp">29°C</span> ~ <span id="lowest-temp">22°C</span></div>
+                        <button class="modal-button">Save trip</button>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay"></div>
         </section>
     </main>
 </body>
