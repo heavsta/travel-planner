@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    <main>
+        <section class="userInput">
+            <div class="form">
+                <form class="trip-form" onsubmit="return Client.handleSubmit(event)">
+                    <input class="search-input" type="search" id="city" placeholder="What's your destination?" required>
+                    <label>Departure
+                        <input class="date-input" type="date" id="departure" name="trip-start" min="2020-07-01" max="2022-12-31" value="2020-07-14">
+                    </label>
+                    <input class="submit-input" type="submit" value="Search" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
