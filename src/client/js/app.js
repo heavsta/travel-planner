@@ -2,7 +2,8 @@
  * Imports
  */
 
-import getCoordinates from './geonames'
+import { getCoordinates } from './geonames'
+import { getWeather } from './weatherbit'
 
 
 /**
