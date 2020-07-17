@@ -1,7 +1,11 @@
-// Import needed functions
 import { getGeonamesApiData } from './GeonamesApi';
 
-function planTrip() {
+
+// Event listener
+document.getElementById('generate').addEventListener('click', planTrip);
+
+
+function saveTrip() {
 
     // First get user input, aka CITY + DEPARTURE DATE
     let cityInput = document.getElementById('city').value;
@@ -30,4 +34,4 @@ function planTrip() {
 }
 
 
-export { planTrip }
+export { saveTrip }
