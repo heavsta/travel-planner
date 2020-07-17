@@ -1,4 +1,11 @@
 /**
+ * Imports
+ */
+
+import getCoordinates from './geonames'
+
+
+/**
  * Global Variables
  */
 
