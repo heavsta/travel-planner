@@ -42,8 +42,8 @@ app.get('/', function (req, res) {
 
 //POST route adds incoming projectData
 app.post('/add', function (req, res) {
-    projectData.locationAnswer = req.body.location;
-    projectData.dateAnswer = req.body.dateAnswer;
+    projectData.cityInput = req.body.city;
+    projectData.dateInput = req.body.date;
     projectData.weather = req.body.weather;
     projectData.daysUntil = req.body.daysUntil;
     res.send(projectData);

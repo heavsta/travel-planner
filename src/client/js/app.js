@@ -13,13 +13,13 @@ import { updateUI } from './updateUI'
  */
 
 const geonamesUrl = 'http://api.geonames.org/searchJSON?q=';
-const geonamesApiKey = process.env.GEONAMES_API_ID;
+const geonamesApiKey = 'heavsta'
 
 const weatherbitUrl = 'https://cors-anywhere.herokuapp.com/http://api.weatherbit.io/v2.0/forecast/daily';
-const weatherbitApiKey = process.env.WEAHTERBIT_API_ID;
+const weatherbitApiKey = '4dde57a9c99244e19d8a799f1aa754d2';
 
 const pixabayURl = 'https://cors-anywhere.herokuapp.com/https://pixabay.com/api/?key=';
-const pixabayApikey = process.env.PIXABAY_API_ID;
+const pixabayApikey = '17515991-320a62210cdeb6ba505cb8a30';
 
 const submit = document.getElementById('generate');
 
@@ -48,7 +48,7 @@ function saveTrip(event) {
             return weatherData;
         })
         //add all the data to the POST request
-        .then((weather) => {
+        .then((weatherData) => {
             const allData = postData('http://localhost:8080/add', {cityInput, dateInput, weather: weatherData.data[0].temp});
             return allData;
         })

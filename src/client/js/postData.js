@@ -3,14 +3,14 @@ const postData = async(url ='', data = {}) => {
         method: 'POST',
         credentials: 'same-origin',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json', // body data type must match "Content-Type" header
         },
 
-      body: JSON.stringify({
-        date: data.dateInput,
-        city: data.cityInput,
-        weather: data.weather
-    })
+        body: JSON.stringify({
+            date: data.dateInput,
+            city: data.cityInput,
+            weather: data.weather,
+        })
   });
     try {
         const allData = await request.json();
