@@ -2,7 +2,7 @@ import { getGeonamesApiData } from './GeonamesApi';
 
 
 // Event listener
-document.getElementById('generate').addEventListener('click', planTrip);
+document.getElementById('generate').addEventListener('click', saveTrip);
 
 
 function saveTrip() {

@@ -25,7 +25,7 @@ app.use(cors());
 
 //Init server
 app.use(express.static('dist'));
-const port = 8080;
+const port = 8081;
 
 app.get('/', function(req, res) {
     res.sendFile('dist/index.html');
