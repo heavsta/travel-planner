@@ -145,8 +145,8 @@ html {
 
 .wallpaper,
 .holder-headline,
-.holder-zip,
-.holder-feel,
+.holder-city,
+.holder-date,
 #generate,
 .holder-entry {
     animation-duration: 2s;
@@ -166,12 +166,12 @@ html {
     animation-name: slideUp;
 }
 
-.holder-zip {
+.holder-city {
     animation-name: slideUp;
     animation-delay: 500ms;
 }
 
-.holder-feel {
+.holder-date {
     animation-name: slideUp;
     animation-delay: 1000ms;
 }
