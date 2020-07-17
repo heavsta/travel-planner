@@ -4,6 +4,7 @@
 
 import { getCoordinates } from './geonames'
 import { getWeather } from './weatherbit'
+import { postData } from './postData'
 
 
 /**
