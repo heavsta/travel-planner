@@ -5,6 +5,7 @@
 import { getCoordinates } from './geonames'
 import { getWeather } from './weatherbit'
 import { postData } from './postData'
+import { updateUI } from './updateUI'
 
 
 /**
@@ -56,3 +57,5 @@ function saveTrip(event) {
             updateUI(allData);
         });
 }
+
+export { saveTrip }
