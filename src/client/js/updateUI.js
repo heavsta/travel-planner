@@ -1,3 +1,6 @@
+const pixabayUrl = 'https://pixabay.com/api/?key=';
+const pixabayApiKey = '17515991-320a62210cdeb6ba505cb8a30';
+
 const updateUI = async(allData) => {
     const request = await fetch(pixabayUrl + pixabayApiKey + "&q=" + allData.cityInput + "+&image_type=illustration");
     try {

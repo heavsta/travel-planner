@@ -15,11 +15,11 @@ import { updateUI } from './updateUI'
 const geonamesUrl = 'http://api.geonames.org/searchJSON?q=';
 const geonamesApiKey = 'heavsta'
 
-const weatherbitUrl = 'https://cors-anywhere.herokuapp.com/http://api.weatherbit.io/v2.0/forecast/daily';
+const weatherbitUrl = 'http://api.weatherbit.io/v2.0/forecast/daily';
 const weatherbitApiKey = '4dde57a9c99244e19d8a799f1aa754d2';
 
-const pixabayURl = 'https://cors-anywhere.herokuapp.com/https://pixabay.com/api/?key=';
-const pixabayApikey = '17515991-320a62210cdeb6ba505cb8a30';
+const pixabayUrl = 'https://pixabay.com/api/?key=';
+const pixabayApiKey = '17515991-320a62210cdeb6ba505cb8a30';
 
 const submit = document.getElementById('generate');
 

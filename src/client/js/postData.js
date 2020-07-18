@@ -5,7 +5,6 @@ const postData = async(url ='', data = {}) => {
         headers: {
             'Content-Type': 'application/json', // body data type must match "Content-Type" header
         },
-
         body: JSON.stringify({
             date: data.dateInput,
             city: data.cityInput,
