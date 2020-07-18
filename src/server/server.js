@@ -40,6 +40,9 @@ app.get('/', function (req, res) {
   });
 
 
+// Setting up empty JS object to act as endpoint for all routes
+projectData = {};
+
 //POST route adds incoming projectData
 app.post('/add', function (req, res) {
     projectData.cityInput = req.body.city;
