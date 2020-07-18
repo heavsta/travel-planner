@@ -59,3 +59,15 @@ function saveTrip(event) {
 }
 
 export { saveTrip }
+
+
+
+/**
+ * Extend Project
+ */
+
+//Incorporating print that allows you to print or save as PDF
+document.getElementById('print').addEventListener('click',function(e){
+    e.preventDefault();
+    window.print();
+});
