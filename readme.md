@@ -14,3 +14,10 @@ Here are the necessary command lines to run the project successfully:
 3. `npm run build-dev` to run webpack developer server
 4. `npm run start` to run local node server and start the application
 5. `npm run test` to test the app
+
+# Extend Option
+Print button with opportunity to export as PDF
+
+# Screenshot
+
+![travelPlanner](https://user-images.githubusercontent.com/64216992/87850117-ef8cae00-c8ed-11ea-9904-1b481421bc72.png)
