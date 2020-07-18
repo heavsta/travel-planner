@@ -55,7 +55,7 @@ function saveTrip(event) {
         //update UI
         .then(function(allData) {
             updateUI(allData);
-        });
+        })
 }
 
 export { saveTrip }

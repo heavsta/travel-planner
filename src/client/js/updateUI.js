@@ -2,7 +2,7 @@ const pixabayUrl = 'https://pixabay.com/api/?key=';
 const pixabayApiKey = '17515991-320a62210cdeb6ba505cb8a30';
 
 const updateUI = async(allData) => {
-    const request = await fetch(pixabayUrl + pixabayApiKey + "&q=" + allData.cityInput + "+&image_type=illustration");
+    const request = await fetch(pixabayUrl + pixabayApiKey + "&q=" + allData.cityInput + '&image_type=photo&pretty=true');
     try {
         const pixabayImg = await request.json();
         //delay before departure
@@ -12,7 +12,7 @@ const updateUI = async(allData) => {
         const countdown = Math.ceil(daysCalc / 8.64e7);
         const dateFormat = allData.dateInput.split("-").reverse().join("/");
         //update UI
-        document.getElementById('city').innerHTML = allData.cityInput;
+        document.getElementById('cityEntered').innerHTML = allData.cityInput;
         document.getElementById('temp').innerHTML = allData.weather;
         document.getElementById('days').textContent = countdown;
         document.getElementById('dateEntered').innerHTML = dateFormat;
